@@ -1,0 +1,102 @@
+main {
+    width: 100vw;
+    padding-top: 100px;
+    height: 500px;
+
+}
+main .container {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main .container .left {
+    width: 50%;
+}
+main .container .right {
+    width: 40%;
+    display: grid;
+    place-items: center;
+}
+main .container .left .title {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: var(--font-bg);
+}
+main .container .left .btns {
+    margin-top: 40px;
+    width: 60%;
+    display: flex;
+}
+main .container .left .btns .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 60%;  
+    border-radius: 3px;
+    border: 1px solid var(--font-bg);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--font-bg);
+    text-align: center;
+}
+
+main .container .left .btns .btn:nth-child(2){
+    margin-left: 10px;
+    color: var(--btn2);
+    background-color: var(--btn2-bg);
+}
+main .container .left .btns .btn:nth-child(1){
+    background-color: var(--font-bg);
+    text-align: center;
+    color: var(--btn); 
+    background-color: var(--btn-bg);
+    transition: all .4s ease;
+}
+main .container .left .btns .btn:nth-child(1):hover {
+    background-color: var(--btn-hv-bg);
+    color: var(--btn-hv);
+    transition: all .4s ease;
+}
+main .container .left .btns .btn:nth-child(2):hover{
+    background-color: var(--btn2-bg-hv);
+    color: var(--btn2-hv); 
+    transition: all .4s ease;
+}
+main .container .left .title span {
+    color: var(--font-sp-bg);
+}
+main .container .left .desc {
+    font-size: 18px;
+    color: var(--font-bg);
+}
+
+main .container .right .img-cont {
+    width: 70%;
+    margin: 0 auto;
+}
+
+main .container .right .img-cont img {
+    width: 90%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1100px){
+    main .container {
+        display: block;
+    }
+    main .container .left {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        height: 90vh;
+        margin: 0 auto;
+    }
+    main .container .left .btns{
+        width: 90%;
+    }
+    main .container .right {
+        display: none;
+    }
+}

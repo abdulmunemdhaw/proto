@@ -1,0 +1,93 @@
+main {
+    width: 100vw;
+    padding-top: 100px;
+    height: 500px;
+}
+main .container {
+    width: 90%;
+    height: 100%;
+    background-color: var(--about-me-card-bg);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+}
+main .container .left {
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+main .container .left img {
+    width: 90%;
+    height: 60%;
+
+}
+main .container .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .container .right .title {
+    font-size: 1.2rem;
+    color: var(--font-bg);
+    width: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--font-bg);
+}
+main .container .right form div label{
+    display: block;
+    padding: 10px 0;
+    font-weight: 200;
+    color: var(--font-bg);
+}
+main .container .right form div input {
+    border: 0px;
+   
+    width: 90%;
+    border-bottom: 2px solid ;
+    padding: 5px 2px;
+}
+main .container .right form div input:focus {
+    outline: none;
+}
+main .container .right form div textarea {
+    border: 0px;
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 100px;
+    min-height: 100px;
+    width: 90%;
+    border-bottom: 2px solid ;
+    padding: 5px 2px;
+}
+main .container .right form div textarea:focus {
+    outline: none;
+}
+main .container .right form button{
+    width: 90%;
+    padding: 10px 0;
+    background-color: var(--font-bg);
+    color: var(--about-me-card-bg);
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 10px;
+
+}
+@media only screen and (max-width: 1100px){
+    main .container{
+        display: block;
+        height: auto;
+        padding: 20px;
+    }
+    main .container .left{
+        display: none;
+    }
+    main .container .right {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

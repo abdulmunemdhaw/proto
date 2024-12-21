@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/nav.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <title>I'm Abdulmunem Dhaw </title>
+</head>
+<body>
+    <!-- nav bar -->
+    <section id="nav">
+        <div class="container">
+            <!--desktop-->
+            <div class="nav-desktop">
+                <div class="title">
+                    <a href="index.html">Abdulmunem<br>Dhaw</a>
+                </div>
+              
+                <div class="nav-bar">
+
+                    <div class="nav-bar-items">
+                        <div class="theme-switch-wrapper">
+                            <i class="fas fa-sun"></i>
+                            <label class="theme-switch" for="checkbox">
+                              <input type="checkbox" id="checkbox" />
+                              <div class="slider round"></div>
+                            </label>
+                            <i class="fas fa-moon"></i>
+                          </div>
+                        <div class="nav-bar-item" data-url="/work.html">Work</div>
+                        <div class="nav-bar-item" data-url="/about.html">About</div>
+                        <div class="nav-bar-item" data-url="/contact.html">Contact</div>
+                    </div>
+                </div>
+            </div> 
+            <!-- mobile -->
+            <div class="nav-mobile">
+                <div class="title">
+                    <a href="index.html">Abdulmunem<br>Dhaw</a>
+                </div>
+                <div class="ham">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nav-bar">
+                    <div class="theme-switch-wrapper">
+                        <i class="fas fa-sun"></i>
+                        <label class="theme-switch" for="checkbox">
+                          <input class="chx" type="checkbox" id="checkbox" />
+                          <div class="slider slider2 round"></div>
+                        </label>
+                        <i class="fas fa-moon"></i>
+                      </div>
+                    <div class="nav-bar-items">
+                        <div class="nav-bar-item" data-url="/work.html">Work</div>
+                        <div class="nav-bar-item" data-url="/about.html">About</div>
+                        <div class="nav-bar-item" data-url="/contact.html">Contact</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- who am i-->
+    <main>
+        <div class="container">
+            <div class="left">
+               <div>
+                    <div class="title">
+                        I'm <span>Abdulmunem Dhaw</span> <br>
+                        I a <span>Software Architecture</span>
+                    </div>
+                    <div class="desc">
+                        Helping people make the world a better place through quality software. By focusing on user-centered design, innovative solutions, and scalable technologies
+                    </div>
+                    <div class="btns">
+                        <a href="contact.html" class="btn">Let's Talk</a>
+                        <a href="about.html" class="btn">More About Me</a>
+                    </div>
+               </div> 
+            </div>
+            <div class="right">
+                <div  class="img-cont">
+                    <img src="./images/boy.png" />
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <!-- JS code -->
+    <script src="./js/nav.js"></script>
+    <script src="./js/darkmode.js"></script>
+</body>
+</html>
